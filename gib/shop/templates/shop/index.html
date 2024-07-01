@@ -32,6 +32,21 @@
            padding-left: 0,
            padding-right: 0;
            }
+           @keyframes multicolor {
+            0% { color: red; }
+            20% { color: orange; }
+            40% { color: yellow; }
+            60% { color: green; }
+            80% { color: blue; }
+            100% { color: purple; }
+        }
+        
+        .flash-sale {
+            animation: multicolor 5s infinite;
+        }
+
+       
+        
   {% endblock %}
   {% block body %}
   {% load static %}
@@ -39,7 +54,7 @@
 
 <div class="container">
     {% for product , range , noslides in allprods %}
-      <h4 class="my-4">Flash Sale on - {{product.0.category}}</h4>
+      <h4 class="my-4 flash-sale">Flash Sale on - {{product.0.category}}</h4>
       <div class="row">
      <div id="demo{{forloop.counter}}" class=" col carousel slide my-3" data-ride="carousel">
       <ul class="carousel-indicators">

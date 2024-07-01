@@ -16,7 +16,7 @@
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">GET IN BAG</a>
+  <a class="navbar-brand" href="#">GET In BAG </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -28,19 +28,24 @@
       </li>
       
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">About Us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <a class="nav-link" href="#">Tracker</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Cart(<span id="cart">0</span>)</a>
+        <a class="nav-link" href="#">Contact Us</a>
       </li>
+      
+      
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
+    <button type="button" class="btn btn-secondary mx-2" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom">
+      Cart(<span id="cart">0</span>)
+    </button>
   </div>
 </nav>
 {% block body %} {% endblock %}
