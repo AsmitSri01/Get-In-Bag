@@ -28,20 +28,21 @@ def about(request):
 
 
 def contact(request):
-    return HttpResponse("We are at Contact")
+    return render(request,'shop/contact.html')
 
 
 def tracker(request):
-    return HttpResponse("We are at Tracker")
+    return render(request,'shop/tracker.html')
 
 
 def search(request):
-    return HttpResponse("We are at search")
+    return render(request,'shop/search.html')
 
 
-def productview(request):
-    return HttpResponse("We are at Product View")
+def productview(request,id):
+    #fetch the product using the id 
+    return render(request,'shop/prodview.html')
 
 
 def checkout(request):
-    return HttpResponse("We are at Checkout")
+    return render(request,'shop/checkout.html')
