@@ -39,7 +39,7 @@ def search(request):
     return render(request,'shop/search.html')
 
 
-def productview(request,id):
+def productview(request,myid):
     #fetch the product using the id 
     return render(request,'shop/prodview.html')
 
